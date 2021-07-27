@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <title>City ART</title>
+    <link rel="icon" href="lib/icon_web.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        body { margin:0; background:#ffffff; }
+        #map {
+          min-width:600px; min-height:600px;
+          x-width:600px; x-height:100%;
+          position:fixed;
+          top:7em; bottom:0;
+          left:0; right:0;
+          border-top:1px lsoid #bbb;
+        }
+        pre {
+          position:fixed;
+          bottom:0; height:8.5em;
+          margin:0; padding:0 2em;
+        }
+
+        .leaflet-draw-toolbar a {
+          background-image: url('https://unpkg.com/leaflet-draw@1.0.2/dist/images/spritesheet.png');
+          background-repeat: no-repeat;
+          color: transparent !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+    
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet-src.js" integrity="sha512-IkGU/uDhB9u9F8k+2OsA6XXoowIhOuQL1NTgNZHY1nkURnqEGlDZq3GsfmdJdKFe1k1zOc6YU2K7qY+hF9AodA==" crossorigin=""></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.2/dist/leaflet.draw-src.css"/>
+    
+    <script src="https://unpkg.com/leaflet-draw@1.0.2/dist/leaflet.draw-src.js"></script>
+
+    <div id="map"></div>
+
+    <script src="lib/main.js"></script>
+
+    <h1><strong>&nbsp;CITY ART&nbsp;</strong><small>version: 0.1</small></h1>
+
+</html>
