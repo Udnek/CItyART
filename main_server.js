@@ -65,7 +65,7 @@ function api(req, res)
             art = " картина";
         }
         else{
-            art = " art";
+            art = " painting";
         };
 
         while(true){
