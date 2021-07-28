@@ -73,7 +73,7 @@ function api(req, res)
                 resulturl = await google.scrape(returncity.name.toString() + art, 3);
                 break;
             } catch(e){
-                console.log("ERROR WHITH GOOGLE, e");
+                console.log("ERROR WHITH GOOGLE", e);
             };
             
         };
