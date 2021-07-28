@@ -7,12 +7,12 @@ const nStatic = require("node-static");
 const nearbyCities = require("nearby-big-cities");
 const requestImageSize = require('request-image-size');
 //const nearbyCities = require('find-nearest-cities');
-
+var Scraper = require('images-scraper');
 
 //const GoogleImages = require('google-images');
 //const client = new GoogleImages('5e43258ecb0740378', 'AIzaSyDrA4s-ZTgImqEsqaxaxFYxCzSTckBXbuY');
 
-var Scraper = require('images-scraper');
+
 const { Console } = require("console");
 const google = new Scraper({
     puppeteer: {
@@ -73,7 +73,7 @@ function api(req, res)
                 resulturl = await google.scrape(returncity.name.toString() + art, 3);
                 break;
             } catch(e){
-                console.log("ERROR WHITH GOOGLE");
+                console.log("ERROR WHITH GOOGLE, e");
             };
             
         };
